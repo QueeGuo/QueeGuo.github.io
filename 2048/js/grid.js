@@ -112,13 +112,13 @@ Grid.prototype.clone = function() {
 
 // Set up the initial tiles to start the game with
 Grid.prototype.addStartTiles = function () {
-  for (var i=0; i<4; i++) {
+  for (var i=0; i<2; i++) {
 
-    var value = Math.pow(2, i+7) ;
+    //var value = Math.pow(2, i+7) ;
     //alert(value);
-    var tile = new Tile(this.randomAvailableCell(), value);
-    this.insertTile(tile);
-    //this.addRandomTile();
+    //var tile = new Tile(this.randomAvailableCell(), value);
+    //this.insertTile(tile);
+    this.addRandomTile();
   }
 };
 
