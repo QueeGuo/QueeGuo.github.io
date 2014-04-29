@@ -112,8 +112,13 @@ Grid.prototype.clone = function() {
 
 // Set up the initial tiles to start the game with
 Grid.prototype.addStartTiles = function () {
-  for (var i=0; i<this.startTiles; i++) {
-    this.addRandomTile();
+  for (var i=0; i<4; i++) {
+
+    var value = Math.pow(2, i+7) ;
+    //alert(value);
+    var tile = new Tile(this.randomAvailableCell(), value);
+    this.insertTile(tile);
+    //this.addRandomTile();
   }
 };
 
@@ -204,7 +209,7 @@ Grid.prototype.move = function (direction) {
           score += merged.value;
 
           // The mighty 2048 tile
-          if (merged.value === 2048) {
+          if (merged.value === 8192) {
             won = true;
           }
         } else {
@@ -568,7 +573,7 @@ Grid.prototype.isWin = function() {
   for (var x=0; x<4; x++) {
     for (var y=0; y<4; y++) {
       if (self.cellOccupied(this.indexes[x][y])) {
-        if (self.cellContent(this.indexes[x][y]).value == 2048) {
+        if (self.cellContent(this.indexes[x][y]).value == 8192) {
           return true;
         }
       }
