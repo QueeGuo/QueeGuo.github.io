@@ -4,7 +4,7 @@
     <language size="969 KB" file="cat.zip" iso6391="ca" iso6392="cat" name="Catalan"/>
     <language size="1.0 MB" file="ces.zip" iso6391="cs" iso6392="ces" name="Czech"/>
     <language size="19 MB" file="chi_sim.zip" iso6391="zh-CN" iso6392="chi_sim" name="Chinese (Simplified)"/>
-    <language size="26 MB" file="chi_tra.zip" iso6391="zh-TW" iso6392="chi_tra" name="Chinese (Traditional)" hidden="true"/>
+    <language size="26 MB" file="chi_tra.zip" iso6391="zh-TW" iso6392="chi_tra" name="Chinese (Traditional)"/>
     <language size="937 KB" file="dan.zip" iso6391="da" iso6392="dan" name="Danish"/>
     <language size="944 KB" file="deu.zip" iso6391="de" iso6392="deu" name="German"/>
     <language size="921 KB" file="ell.zip" iso6391="el" iso6392="ell" name="Greek (Modern)"/>
